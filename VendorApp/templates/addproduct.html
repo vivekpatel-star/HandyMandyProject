@@ -1,0 +1,66 @@
+{% extends 'base4.html' %}
+{% load static %}
+
+{% block content %}
+
+    <body>
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6 mt-4 mb-4">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h1 class="text-center mb-5" id="Vendorregister">Add Product</h1>
+              <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-outline mb-4">
+                  <input type="text" name="name" id="form3Example1cg" placeholder="Enter Product Name" class="form-control form-control-lg" required/>
+                </div>
+                <b>
+                <div class="form-outline mb-4">
+                  <label>Subcategory:</label>
+                  <select class="select ml-3" name="subCategory">
+                      <!-- <option value="1">Food</option>
+                      <option value="1">Home decore</option>
+                      <option value="1">Art And Craft</option>
+                      <option value="1">Fashion</option> -->
+                      {% for i in subCatData %}
+                      <option selected="selected" value="{{i.id}}">{{i.name}}</option>
+                      {% endfor %}
+                    </select>
+                </div></b>
+                
+                <div class="form-outline mb-4">
+                  <input type="number" name="price" id="form3Example1cg" placeholder="Enter Price" class="form-control form-control-lg" required />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="number" name="stock" id="form3Example1cg" placeholder="Enter Stock" class="form-control form-control-lg" required />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <textarea id="form3Example4" name="description" class="form-control form-control-lg" placeholder="Enter Product Description" required></textarea>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <textarea id="form3Example4" name="specification" class="form-control form-control-lg" placeholder="Enter Product Specification" required></textarea>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4">Product Image</label>
+                  <input name="image" type="file" id="form3Example4" class="form-control form-control-lg" />
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-success btn-block btn-lg">Add Product</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+{%endblock%}

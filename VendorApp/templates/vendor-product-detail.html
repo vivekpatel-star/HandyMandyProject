@@ -1,0 +1,63 @@
+{% extends 'base4.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+
+<!-- product detail start -->
+
+<div class="container h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-lg-12 col-xl-11">
+      <!-- <div class="card text-black" style="border: none;">
+        <div class="card-body p-md-5"> -->
+          <div class="row justify-content-center">
+            
+            {% if errorMessage %}
+              <script>alert('{{errorMessage}}')</script>
+            {% endif %}
+
+            {% comment %} {% for i in productData %} {% endcomment %}
+
+            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+              <p class="text-left h2 mb-2 fw-bold  mx-1 mx-md-4 mt-4" id="detailname">{{productData.name}}</p>
+              <form method="POST" class="mx-1 mx-md-4">
+                {% csrf_token %}
+                <div class="d-flex flex-row text-left mb-4">
+                  <div class="form-outline flex-fill mb-0">
+                    <h2>Price : ₹{{productData.price}}</h2>
+                  </div>
+                </div>
+                <div class="d-flex flex-row text-left mb-4">
+                  <div class="form-outline flex-fill mb-0">
+                    <h2 style="color: darkblue;">Description:</h2>
+                    <h5>{{productData.description}}</h5>
+                    <h2 style="color: darkblue;">Specification:</h2>
+                    <h5>{{productData.specification}}</h5>
+                  </div>
+                </div>  
+                <!-- <div class="d-flex text-left mb-3 mb-lg-4">
+                  <input name="proId" value="{{ productData.pk }}" hidden />
+                  <input name="proPrice" value="{{ productData.price }}" hidden />
+                  <button type="submit" class="btn btn-lg">Add to cart</button>
+                </div> -->
+
+              </form>
+            </div>
+            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+              <img src="{{ productData.image.url }}" class="img-fluid" alt="Sample image">
+            </div>
+          </div>
+        </div>
+        
+        {% comment %} {% endfor %} {% endcomment %}
+
+      </div>
+    </div>
+ <!--  </div>
+</div> -->
+
+<!-- product detail end -->
+  </body>
+{%endblock%}

@@ -1,0 +1,974 @@
+{% extends 'base1.html' %}
+{% load static %}
+
+{% block content %}
+
+  <body>
+
+    <!-- CONTENT START -->
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3">
+          <h1 class="h6 pb-4">Categories</h1>
+          <ul class="list-unstyled templatemo-accordion">
+
+            <li class="pb-3">
+              <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#" id="text1"> 
+                FOOD
+                <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+              </a>
+              <ul class="collapse show list-unstyled pl-3">
+                <li><a class="dropdown-item" target="_self" href="{% url 'shopurl' %}">Bakery</a></li>
+                <li><a class="dropdown-item" target="_self" href="{% url 'numkeenurl' %}">Numkeen</a></li>
+                <li><a class="dropdown-item" target="_self" href="{% url 'acharurl' %}">Pickles(aachar)</a></li>
+                <li><a class="dropdown-item" target="_self" href="{% url 'sweeturl' %}">Sweet</a></li>
+                <li><a class="dropdown-item" target="_self" href="{% url 'masalaurl' %}">Masala</a></li>
+              </ul>
+            </li>
+
+            <li class="pb-3">
+              <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#" id="text1">
+                HOME DECORE
+                <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+              </a>
+              <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                <li><a class="dropdown-item" href="{% url 'candlesurl' %}">Candles</a></li>
+                <li><a class="dropdown-item" href="{% url 'claypottryurl' %}">Clay & Pottery</a></li>
+                <li><a class="dropdown-item" href="{% url 'bohourl' %}">Boho</a></li>
+                <li><a class="dropdown-item" href="{% url 'doorknobsurl' %}">Doorknobs(Toran)</a></li>
+                <li><a class="dropdown-item" href="{% url 'nameplateurl' %}">NamePlate(For Home)</a></li>
+              </ul>
+            </li>
+
+            <li class="pb-3">
+              <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#" id="text1">
+                ART & CRAFT
+                <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+              </a>
+              <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                <li><a class="dropdown-item" href="{% url 'bamboourl' %}">Bamboo Art</a></li>
+                <li><a class="dropdown-item" href="{% url 'glassurl' %}">Glass Art</a></li>
+                <li><a class="dropdown-item" href="{% url 'rakhiurl' %}">Rakhi Art</a></li>
+                <li><a class="dropdown-item" href="{% url 'paperurl' %}">Paper Craft</a></li>
+                <li><a class="dropdown-item" href="{% url 'gifturl' %}">Gift Craft</a></li>
+              </ul>
+            </li>
+
+            <li class="pb-3">
+              <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#" id="text1">
+               FASHION
+                <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+              </a>
+              <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                <li><a class="dropdown-item" href="{% url 'accessoriesurl' %}">Ladies Accessories</a></li>
+                <li><a class="dropdown-item" href="{% url 'handbagurl' %}">Hand Bags</a></li>
+                <li><a class="dropdown-item" href="{% url 'knittingurl' %}">Knitting</a></li>
+                <li><a class="dropdown-item" href="{% url 'maskurl' %}">Masks</a></li>
+                <li><a class="dropdown-item" href="{% url 'keychainurl' %}">Key Chain</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="row">
+
+            <!-- BHAKHARVDI STRAT -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/bhakharvadi1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Bhakharvadi
+                    <h4 id="ruppe">₹100 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/bhakharvadi2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Bhakharvadi
+                    <h4 id="ruppe">₹80 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/bhakharvadi3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye" href="{%  url '' %}"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Bhakharvadi
+                    <h4 id="ruppe">₹120 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- BHAKHARVDI END -->
+
+            <!-- KHAKHRA START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/khakhra1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    khakhra
+                    <h4 id="ruppe">₹80 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/khakhra2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Methi khakhra
+                    <h4 id="ruppe">₹90 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/khakhra3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                     khakhra
+                    <h4 id="ruppe">₹120 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- KHAKHRA END -->
+
+            <!-- CHAVANU START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chvanu1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Chavana
+                    <h4 id="ruppe">₹110 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chvanu2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                     Chavana
+                    <h4 id="ruppe">₹100 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chvanu3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Chavanu
+                    <h4 id="ruppe">₹140 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHAVANU END -->
+
+            <!-- SEV START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/sev1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Mori Sev
+                    <h4 id="ruppe">₹100 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/sev2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Palak Sev
+                    <h4 id="ruppe">₹180 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/sev3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Lasun Sev
+                    <h4 id="ruppe">₹90 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SEV END -->
+
+            <!-- GATHIYA START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/gathiya1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Tikha Gathiya
+                    <h4 id="ruppe">₹70 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/gathiya2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Gathiya
+                    <h4 id="ruppe">₹40 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/gathiya3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Papdi Gathiya
+                    <h4 id="ruppe">₹60 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- GATHIYA END -->
+
+            <!-- CHAKRI START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chakri1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Masala Chakri
+                    <h4 id="ruppe">₹130 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chakri2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Chakri
+                    <h4 id="ruppe">₹80 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chakri3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Buttuer Chakri
+                    <h4 id="ruppe">₹150 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHAKRI END -->
+
+            <!-- NIMKI START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/nimki1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Nimki(Puri)
+                    <h4 id="ruppe">₹90 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/nimki2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Farsi Puri
+                    <h4 id="ruppe">₹100 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/nimki3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Nimki
+                    <h4 id="ruppe">₹160 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- NIMKI END -->
+
+            <!-- THEPLA START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/thepla1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Roll Thepla
+                    <h4 id="ruppe">₹40 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/thepla2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Methi Thepla
+                    <h4 id="ruppe">₹30 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/thepla3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Thepla
+                    <h4 id="ruppe">₹35 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- THEPLA END -->
+
+            <!-- CHORAFARI START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chorafadi1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Chorafadi
+                    <h4 id="ruppe">₹80 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chorafadi2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Chorafadi
+                    <h4 id="ruppe">₹55 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chorafadi3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Chorafadi
+                    <h4 id="ruppe">₹80 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHIRAFARI END -->
+
+            <!-- CHEVDO START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chevdo1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Poha Chevdo
+                    <h4 id="ruppe">₹60 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chevdo2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Mix Chevdo
+                    <h4 id="ruppe">₹50 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chevdo3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Frali Chevdo
+                    <h4 id="ruppe">₹70 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHEVDO END -->
+
+            <!-- CHIPS START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chips1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Potato Chips
+                    <h4 id="ruppe">₹40 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chips2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Kela Chips
+                    <h4 id="ruppe">₹70 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/chips3.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Katri
+                    <h4 id="ruppe">₹80 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHIPS END -->
+
+            <!-- MATHIYA START -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/mathiya1.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Mathiya
+                    <h4 id="ruppe">₹130 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 product-wap rounded-0" id="bakry1">
+                <div class="card rounded-0">
+                  <img class="card-img rounded-0 img-fluid" src="assets/img/numkeenimages/mathiya2.png" />
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="far fa-eye"></i></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="h2 text-decoration-none">
+                    Mathiya
+                    <h4 id="ruppe">₹70 (250 gm.)</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- MATHIYA END -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT END -->
+
+  </body>
+
+{%endblock%}

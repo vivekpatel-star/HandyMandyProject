@@ -1,0 +1,145 @@
+{% extends 'base4.html' %}
+{% load static %}
+
+{% block content %}
+
+  <body>
+
+    <!-- BANNER START  -->
+
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img class="img-fluid" src="{% static 'images/b1.jpg' %}" alt="carousel1" />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left align-self-center">
+                  <h1 class="h1 text-success"><b>Homemade Food</b></h1>
+                  <h3 class="h2" id="font1">The best days start with a homemade food.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img class="img-fluid" src="{% static 'images/car2.png' %}" alt="carousel" />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left">
+                  <h1 class="h1 text-success"><b>Handmade Jewellery</b></h1>
+                  <h3 class="h2" id="font1" >Jewellery has the power to be the one little thing that makes you feel unique.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img  class="img-fluid" src="{% static 'images/car3.png' %}" alt="carousel" />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left">
+                  <h1 class="h1 text-success"><b>Handmade Art & Crafts</b></h1>
+                  <h3 class="h2" id="font1">You use a glass mirror to see your face.You use works of art to see your soul.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+
+    <!-- BANNER END -->
+
+    <!-- BANNER START -->
+
+    <section class="bg-success py-5" id="aboutsection">
+      <div class="container-fluid">
+        <img src="{% static 'images/AboutUs.png' %}" class="img-fluid" alt="about us">
+
+      <!-- <div class="container">
+        <div class="row align-items-center py-5">
+          <div class="col-md-8 text-white">
+            <h1>About Us</h1>
+            <p>
+              Our Website Handy Mandy,Helps Vendor To Sell their Hand-Made Products & Customer To Buy Hand-Made Products.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/aboutus.JPG" alt="About Hero" height="110%" width="110%"/>
+          </div>
+        </div>
+      </div> -->
+      
+    </section>
+
+    <!-- BANNER END -->
+
+
+    <!-- SECTION START -->
+
+    <section class="container py-5">
+      <div class="row text-center pt-5 pb-3">
+        <div class="col-lg-6 m-auto">
+          <h1 class="h1" id="ourcat1">Why Shop With Us</h1>
+          <hr class="mx-auto rounded" id="hr1">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 pb-5">
+          <div class="h-100 py-5 services-icon-wap shadow">
+            <div class="h1 text-success text-center">
+              <i class="fa fa-truck fa-lg"></i>
+            </div>
+            <h2 class="h2 mt-4 text-center">Delivery Services</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+          <div class="h-100 py-5 services-icon-wap shadow">
+            <div class="h1 text-success text-center">
+              <i class="fa fa-money fa-lg"></i>
+            </div>
+            <h2 class="h2 mt-4 text-center">Save Money</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+          <div class="h-100 py-5 services-icon-wap shadow">
+            <div class="h1 text-success text-center">
+              <i class="bi bi-bag-fill fa-lg"></i>
+            </div>
+            <h2 class="h2 mt-4 text-center">Online Order</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+          <div class="h-100 py-5 services-icon-wap shadow">
+            <div class="h1 text-success text-center">
+              <i class="fa-solid fa-thumbs-up fa-lg"></i>
+            </div>
+            <h2 class="h2 mt-4 text-center">Best Quality</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION END -->
+  </body>
+
+{% endblock %}

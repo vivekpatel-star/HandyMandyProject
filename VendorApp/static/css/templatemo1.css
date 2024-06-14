@@ -1,0 +1,486 @@
+/*
+---------------------------------------------
+TABLE OF CONTENTS
+------------------------------------------------
+1. Typography
+2. General
+3. Nav
+4. Hero Carousel
+5. Accordion
+6. Shop
+7. Product
+8. Carousel Hero
+9. Carousel Brand
+10. Services
+11. Contact map
+12. Footer
+13. Small devices (landscape phones, 576px and up)
+14. Medium devices (tablets, 768px and up)
+15. Large devices (desktops, 992px and up)
+16. Extra large devices (large desktops, 1200px and up)
+
+--------------------------------------------- */
+
+
+/* TYPOGRAPHY START */
+
+body, ul, li, p, a, label, input, div {
+  font-family: serif;
+  font-size: 20px !important;
+  font-weight: 300 !important;
+}
+.h1 {
+  font-family: serif;
+  font-size: 48px !important;
+  font-weight: 300 !important;
+}
+.h2 {
+  font-family: serif;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+.h3 {
+  font-family: serif;
+  font-size: 22px !important;
+}
+#font1{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#ruppe{
+  font-family: serif;
+  font-size: 23px !important;
+}
+.h6{
+  font-weight: 700;
+  font-size: 35px;
+}
+#text1{
+  color: #325374 !important;
+  font-weight: 600 !important;
+  font-family: serif !important;
+}
+
+/* TYPOGRAPHY END */
+
+
+/* GENERAL START */
+
+.logo { 
+  font-weight: 500 !important;
+}
+.text-warning { 
+  color: #ede861 !important;
+}
+.text-muted { 
+  color: #6699cc !important;
+}
+.text-success { 
+  color: #6699cc !important;
+}
+.text-light { 
+  color: #cfd6e1 !important;
+}
+.bg-dark { 
+  background-color: #212934 !important;
+}
+.bg-light { 
+  background-color: #e9eef5 !important;
+}
+.bg-black { 
+  background-color: #1d242d !important;
+}
+.bg-success { 
+  background-color: #6699cc !important;
+}
+.btn-success {
+  background-color: #6699CC;
+  color: white;
+  font-weight: 700 !important;
+  font-family: serif;
+  -webkit-box-shadow: 0px 10px 10px -10px gray;
+  -moz-box-shadow: 0px, 10px 10px -10px gray;
+  box-shadow: 0px 10px 10px -10px gray;
+}
+.btn-success:hover {
+  background: white;
+  border: 2px solid;
+  color: #6699CC !important;
+}
+.pagination .page-link:hover {
+  color: #000;
+}
+.pagination .page-link:hover, .pagination .page-link.active {
+  background-color: #6699cc;
+  color: #fff;
+}
+
+/* GENERAL END */
+
+
+/* NAVBAR START */
+
+#templatemo_nav_top { 
+  min-height: 40px;
+}
+#templatemo_nav_top * { 
+  font-size: .9em !important;
+  font-weight: 600;
+}
+#templatemo_main_nav a { 
+  color: #212934;
+}
+#templatemo_main_nav a:hover { 
+  color: #6699cc;
+}
+#templatemo_main_nav .navbar .nav-icon { 
+  margin-right: 20px;
+}
+.nav-link{
+  font-weight: 500 !important;
+}
+.dropdown-item{
+  font-weight: 500 !important;
+}
+
+/* NAVBAR END */
+
+
+/* HERO CAROUSEL START */
+
+#template-mo-zay-hero-carousel { 
+  background: white !important;
+}
+
+/* HERO CAROUSEL END */
+
+
+/* CATEDORY START */
+
+#ourcat1 {
+  font-weight: 600;
+  font-family: serif;
+}
+#hr1 {
+  width: 60px;
+  height: 3px;
+  background-color: #6699cc !important;
+  border: 3px solid;
+} 
+#card1 {
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 20px;
+}
+#card1:hover {
+  box-shadow: 3px 3px 3px 3px gray;
+}
+#h5 {
+  font-family: serif;
+  font-size: x-large;
+  font-weight: 600;
+}
+.embed-responsive .card-img-top{
+  
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+/* CATEGORY END */
+
+
+/* ACCORDION START */
+
+.templatemo-accordion a { 
+  color: #000;
+}
+.templatemo-accordion a:hover { 
+  color: #333d4a;
+}
+
+/* ACCOEDION END */
+
+
+/* SHOP START */
+
+.shop-top-menu a:hover { 
+  color: #6699cc !important;
+}
+.card-img {
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#shopimg{
+  height: 110px;
+  width: 110px;
+  background: white;
+}
+#category1{
+  border-radius: 30px;
+}
+
+/* SHOP END */
+
+
+/* PRODUCT START */
+
+.product-wap { 
+  background: #dee7e2;
+  border: none !important;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px gray;
+  transition: 0.3s all;
+}
+.product-wap .product-color-dot.color-dot-red { 
+  background:#f71515;
+}
+.product-wap .product-color-dot.color-dot-blue {
+  background:#6db4fe;
+}
+.product-wap .product-color-dot.color-dot-black {
+  background:#000000;
+}
+.product-wap .product-color-dot.color-dot-light {
+  background:#e0e0e0;
+}
+.card.product-wap .card .product-overlay {
+  background: rgba(0,0,0,.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 30px;
+}
+.card.product-wap a { 
+  color: #000;
+}
+#carousel-related-product .slick-slide:focus { 
+  outline: none !important;
+}
+#carousel-related-product .slick-dots li button:before {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.card-img-top {
+  height: 200px;
+}
+#card2 {
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 30px;
+  background: #f8f8f8;
+}
+#card2:hover {
+  box-shadow: 3px 3px 3px 3px gray;
+  opacity: 0.5;
+}
+/* product end */
+
+
+/* Brand start */
+
+.brand-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: .5s;
+}
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Brand end */
+
+
+/* Carousel Hero start */
+
+#template-mo-zay-hero-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: #6699cc;
+}
+#template-mo-zay-hero-carousel .carousel-control-next i,
+#template-mo-zay-hero-carousel .carousel-control-prev i {
+  color: #6699cc !important;
+  font-size: 2.8em !important;
+}
+
+/* Carousel end */
+
+
+/* Carousel Brand start */
+
+.tempaltemo-carousel .h1 {
+  font-size: .5em !important;
+  color: #000 !important;
+}
+
+/* Carousel end */
+
+/* Shop start */
+
+#ourcat2 {
+  font-weight: 600;
+  font-family: serif;
+  font-size: 30px;
+}
+#description{
+  font-size: 48px !important;
+  color: #34376B !important;
+  font-family: serif;
+}
+#shop1{
+  font-weight: 600 !important;
+}
+#ruppe1{
+  font-size: 30px !important;
+  font-family: serif;
+}
+/* shop end */
+
+/* Services  start*/
+
+.services-icon-wap {
+  transition: .3s;
+}
+.services-icon-wap:hover, .services-icon-wap:hover i {
+  color: #fff;
+}
+.services-icon-wap:hover {
+  background: #6699cc;
+}
+
+/* services end */
+
+
+/* Contact map start */
+
+.leaflet-control a, .leaflet-control { 
+  font-size: 10px !important;
+}
+.form-control { 
+  border: 1px solid #e8e8e8;
+}
+
+/* contact  map end */
+
+/* About us start */
+
+#aboutsection{
+  background-color: #34376B !important ;
+}
+
+/* About us end */
+
+
+/* Footer start */
+
+#tempaltemo_footer a { 
+  color: white;
+}
+#tempaltemo_footer a:hover { 
+  color: white !important;
+  padding-left: 8px;
+}
+#tempaltemo_footer ul.footer-link-list li { 
+  padding-top: 10px;
+}
+#tempaltemo_footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+#tempaltemo_footer ul.footer-icons li:hover {
+  /* color: #6699cc !important; */
+  padding-left: 8px;
+}
+#tempaltemo_footer ul.footer-icons li:hover i {
+  color: #6699cc;
+  padding-left: 8px;
+}
+#tempaltemo_footer .border-light { 
+  border-color: #111213 !important;
+}
+#h2footer{
+  color: black !important;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+}
+#li1{
+  font-weight: 600 !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black !important;
+}
+
+/* footer end */
+
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+  font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+@media (min-width: 576px) {
+  .tempaltemo-carousel .h1 {
+    font-size: 1em !important;
+  }
+}
+
+/* small devices end */
+
+/*// Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+  #templatemo_main_nav .navbar-nav {
+    max-width: 450px;
+  }
+ }
+
+ /* medium device end */
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+  #templatemo_main_nav .navbar-nav {
+    max-width: 550px;
+  }
+  #template-mo-zay-hero-carousel .carousel-item {
+    min-height: 30rem !important;
+  }
+  .product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+    font-size: 18px !important;
+  }
+  .product-wap .product-color-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* large devices end */
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+  
+}
+
+/* extra large devices end */
+
+
+
+
+

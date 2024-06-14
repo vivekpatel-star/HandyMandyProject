@@ -1,0 +1,42 @@
+{% extends 'base4.html' %}
+{% load static %}
+
+{% block content %}
+
+    <body>
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6 mt-4 mb-4">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h1 class="text-center mb-5" id="Vendorregister">Order Satus</h1>
+              <form method="POST">
+
+                {% csrf_token %}
+
+                <div class="form-outline mb-4">
+                  <input readonly value="{{orderStatusData.orderId}}" type="text" name="orderno" id="form3Example1cg" placeholder="Enter Order Number" class="form-control form-control-lg" required/>
+                </div>
+
+                <b><div class="form-outline mb-4">
+                  <input value="{{orderStatusData.deliveryDays}}" type="number" name="days" class="form-control form-control-lg"  placeholder="Enter Approx Delivery Days" required/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input value="{{orderStatusData.trackingMessage}}" type="text" name="remark" id="form3Example1cg" placeholder="Enter Remark" class="form-control form-control-lg" required />
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-success btn-block btn-lg">Update</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+{%endblock%}

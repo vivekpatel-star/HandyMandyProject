@@ -1,0 +1,62 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content %}
+
+  <body id="body_profile">
+
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6 mt-4 mb-4">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h1 class="text-center mb-5" id="profile">Fill Details</h1>
+
+              <form method="POST">
+
+                {% csrf_token %}
+                
+                <div class="form-outline mb-4">
+                  <input name="fname" type="text" id="form3Example3c_profile" placeholder="Enter First Name" class="form-control form-control-lg" value="{{ navData.userData.userFirstName }}"/>
+                </div>
+                <div class="form-outline mb-4">
+                  <input name="lname" type="text" id="form3Example3c_profile" placeholder="Enter Last Name" class="form-control form-control-lg" value="{{ navData.userData.userLastName }}"/>
+                </div>
+                <div class="form-outline mb-4">
+                  <input name="email" type="email" id="form3Example3cg" placeholder="Enter Your Email" class="form-control form-control-lg" value="{{ navData.userData.userEmail }}"/>
+                </div>
+              <div class="form-outline mb-4">
+                <input name="contact" type="tel" id="form3Example4cdg" placeholder="Enter Contact No" class="form-control form-control-lg" value="{{ navData.userData.userContact }}"/>
+              </div>
+              <div class="form-outline mb-4">
+                <textarea name="address" class="form-control form-control-lg" rows="3" placeholder="Enter Your Address">{{ navData.userData.userAddress }}</textarea>
+              </div>
+              <div class="form-outline mb-4">
+                <input name="city" type="text" id="form3Example4cg" placeholder="Enter City" class="form-control form-control-lg"/>
+              </div>
+              <div class="form-outline mb-4">
+                <input name="pincode" type="tel" id="form3Example4cdg" placeholder="Enter Pincode" class="form-control form-control-lg"/>
+              </div>
+              <div class="row">
+                <div class="form-outline mb-4 ml-3">
+                  <label>Payment Method :</label>
+                </div>
+              <div class="form-outline mb-4 ml-3">
+                  <input checked type="radio" name="payment" id="male" value="Cash On Delivery"><label>Cash On Delivery</label>
+                 <input type="radio" name="payment" id="male" value="Online"><label>Online</label>
+              </div>
+            </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-success btn-block btn-lg" id="updateprofile">Place Order</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+{%endblock%}

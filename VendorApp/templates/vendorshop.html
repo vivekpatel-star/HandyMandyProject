@@ -1,0 +1,110 @@
+{% extends 'base4.html' %}
+{% load static %}
+
+{% block content %}
+
+  <body>
+
+    <body>
+
+      <!-- CONTENT START -->
+  
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <h1 class="h6 pb-4">Categories</h1>
+            <ul class="list-unstyled templatemo-accordion">
+                {% for i in navData.categoryData %}
+                  <li class="pb-3">
+                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#" id="text1"> 
+                      {{i.catName}}
+                      <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                    </a>
+                    <ul class="collapse show list-unstyled pl-3">
+                      {% for j in i.subCategoryData %}
+                      <li><a class="dropdown-item" target="_self" href="{% url 'vendorshopurl' j.subCatId %}">{{j.subCatName}}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% endfor %}
+            </ul>
+          </div>
+  
+          <div class="col-lg-9">
+            <div class="row">
+  
+              {% for i in productData %}
+  
+              <div class="col-md-4">
+  
+                <a href="{% url 'categoryurl' i.pk %}">
+                
+                <div class="card mb-4 product-wap">
+                  <div class="card" id="category1">
+                    <img class="card-img img-fluid" src="{{ i.image.url }}" />
+                    <div class="card-img-overlay product-overlay d-flex align-items-center justify-content-center">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="btn btn-success text-white mt-2" href="{% url 'vendorproductdetailurl' i.pk %}"><i class="far fa-eye"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="h2 text-decoration-none">
+                      {{i.name}} 
+                      <h4 id="ruppe">₹{{i.price}}</h4>
+                    </a>
+                    <div>
+                      {% if i.rating is 0 %}
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      {% elif i.rating > 0 and i.rating <= 1 %}
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      {% elif i.rating > 1 and i.rating <= 2 %}
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      {% elif i.rating > 2 and i.rating <= 3 %}
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        {% elif i.rating > 3 and i.rating <= 4 %}
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star"></span>
+                        {% elif i.rating > 4 and i.rating <= 5 %}
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!--CONTENT END -->
+  
+    </body>
+  {% endblock %}
